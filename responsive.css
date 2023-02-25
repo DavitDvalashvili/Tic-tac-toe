@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+    /* styling of home section */
+    .home-panel {
+        max-width: 46rem;
+        max-height: 20.5rem;
+        margin: 4rem 0;
+    }
+    .buttons div {
+        height: 5.4rem;
+        width: 19.8rem;
+    }
+    .vs-button {
+        width: 46rem;
+        height: 6.7rem;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.1px;
+        padding: 1.7rem 0 2.5rem 0;
+    }
+    .game-vs-spu {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styling of home section */
+    .vs-button {
+        letter-spacing: 0.125px;
+    }
+
+}
