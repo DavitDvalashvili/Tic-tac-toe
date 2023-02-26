@@ -20,13 +20,74 @@
     .game-vs-spu {
         margin-bottom: 2rem;
     }
+    /* styles of board section */
+    .board-header {
+        width: 46rem;
+    }
+    .turn {
+        width: 14rem;
+        height: 5.2rem;
+        border-radius: 1rem;
+        padding: 1.3rem 0 1.9rem 0;
+        gap: 1.3rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .turn img {
+        width: 2rem;
+    }
+    .reset-button {
+        border-radius: 1rem;
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+    .main-board {
+        margin: 2rem 0 1.9rem 0;
+        width: 46rem;
+    }
+    .main-board div {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 1.5rem;
+        background-size: 6.4rem 6.4rem;
+        background-position: center;
+    }
+    .score {
+        width: 46rem;
+    }
+    .score div {
+        width: 14rem;
+        height: 7.2rem;
+        border-radius: 1.5rem;
+    }
+    #x-score-text, #o-score-text, #ties-text {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.0875rem;
+    }
+    #x-score-num, #o-score-num, #ties-num {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        letter-spacing: 0.15rem;
+    }
+
+
+
+
+
+
+
+
+
 
 }
-
 @media only screen and (min-width: 1440px) {
     /* styling of home section */
     .vs-button {
         letter-spacing: 0.125px;
     }
+     /* styles of board section */
+     
 
 }

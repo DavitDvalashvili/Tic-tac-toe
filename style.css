@@ -20,8 +20,7 @@ body {
   font-style: normal;
   height: 100vh;
 }
-/* styles of home section */
-#home {
+#home, #board {
   width: 100%;
   height: 100%;
   display: flex;
@@ -29,6 +28,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* styles of home section */
 .home-header img, .buttons img {
   width: 3.2rem;
   height: 3.2rem;
@@ -119,8 +119,112 @@ body {
   background-color: var(--skyLight);
   transition: all 0.1s ease-out;
 }
-.home {
+#home {
   display: none;
 }
 /* styles of home section */
+/* styles of board section */
+.board-header {
+  width: 32.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.turn {
+  width: 9.6rem;
+  height: 4rem;
+  background: var(--bg);
+  box-shadow: inset 0rem -0.4rem 0rem #10212A;
+  border-radius: 0.5rem;
+  padding: 1rem 0 1.4rem 0;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.0875rem;
+  color: var(--silver);
+  text-transform: uppercase;
+}
+.turn img {
+  width: 1.6rem;
+}
+.reset-button {
+  background: var(--silver);
+  box-shadow: inset 0rem -0.4rem 0rem #6B8997;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-image: url(./assets/icon-restart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.reset-button:hover {
+  background-color:  var(--light);
+}
+.main-board {
+  margin: 6.4rem 0 2rem 0;
+  width: 32.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main-board div {
+  width: 9.6rem;
+  height: 9.6rem;
+  background: #1F3641;
+  box-shadow: inset 0rem -0.8rem 0rem #10212A;
+  border-radius: 1rem;
+  background-position: top 2.4rem right 2.8rem;
+  background-repeat: no-repeat;
+  background-size: 4rem 4rem;
+}
+#xo-1 {
+  background-image: url(./assets/icon-x.svg);
+}
+#xo-2 {
+  background-image: url(./assets/icon-o.svg);
+}
+.score {
+  width: 32.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score div {
+  width: 9.6rem;
+  height: 6.4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkBg);
+  text-transform: uppercase;
+}
+.x-score {
+  background: var(--sky);
+}
+.o-score {
+  background: var(--orange);
+}
+.ties {
+  background: var(--silver);
+}
+#x-score-text, #o-score-text, #ties-text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.075rem;
+
+}
+#x-score-num, #o-score-num, #ties-num {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+}
 /* styles of board section */
