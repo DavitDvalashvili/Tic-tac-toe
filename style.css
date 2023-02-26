@@ -20,7 +20,7 @@ body {
   font-style: normal;
   height: 100vh;
 }
-#home, #board {
+#home, #board, #result {
   width: 100%;
   height: 100%;
   display: flex;
@@ -227,4 +227,90 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
 }
+#board {
+  display: none;
+}
 /* styles of board section */
+/* styles of result section */
+.result-board {
+  width: 100%;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result-text {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.0875rem;
+  color: var(--silver);
+  margin: 4rem 0 1.6rem 0;
+}
+.o-takes, .x-takes {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.o-takes img, .x-takes img {
+  width: 3rem;
+  height: 3rem;
+}
+.o-takes h2, 
+.x-takes h2,
+.tied h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+.o-takes h2 {
+  color: var(--orange);
+}
+.x-takes h2 {
+  color: var(--sky);
+}
+.tied h2 {
+  color: var(--silver);
+}
+.quit-or-next {
+  margin: 2.4rem 0 4.8rem 0;
+}
+.quit-or-next button {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--darkBg);
+  cursor: pointer;
+}
+#quit {
+  width: 7.6rem;
+  height: 5.2rem;
+  background: var(--silver);
+  box-shadow: inset 0rem -0.4rem 0rem #6B8997;
+  border-radius: 1rem;
+  margin: 0 0.8rem;
+}
+#quit:hover {
+  background-color: var(--light);
+  transition: all 0.1s ease-out;
+}
+#next {
+  width: 14.6rem;
+  height: 5.2rem;
+  background: var(--orange);
+  box-shadow: inset 0rem -0.4rem 0rem #CC8B13;
+  border-radius: 1rem;
+  margin: 0 0.8rem;
+}
+#next:hover {
+  background-color: var(--orangeLight);
+  transition: all 0.1s ease-out;
+}
+/* styles of result section */
+
+
+

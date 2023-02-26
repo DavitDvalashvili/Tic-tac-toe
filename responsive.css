@@ -71,6 +71,31 @@
         line-height: 3rem;
         letter-spacing: 0.15rem;
     }
+    /* styles of result section */
+    .result-text {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        margin: 4.5rem 0 2.3rem 0;
+    }
+    .o-takes, .x-takes {
+        gap: 2.4rem;
+    }
+    .o-takes img, .x-takes img {
+        width: 6.4rem;
+        height: 6.4rem;
+    }
+    .o-takes h2, 
+    .x-takes h2,
+    .tied h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+        letter-spacing: 0.25rem;
+    }
+    .quit-or-next {
+        margin: 3.1rem 0 4.5rem 0;
+    }
+
 
 
 
@@ -87,7 +112,7 @@
     .vs-button {
         letter-spacing: 0.125px;
     }
-     /* styles of board section */
+
      
 
 }
