@@ -65,9 +65,24 @@ body {
   border-radius: 1rem;
   padding: 0.9rem 0.8rem;
 }
+.buttonX {
+  background-image: url(./assets/silver-x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buttonO {
+  background-image: url(./assets/silver-o.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-#button-o {
+.activeX {
   background-color: var(--silver);
+  background-image: url(./assets/navy-x.svg);
+}
+.activeO {
+  background-color: var(--silver);
+  background-image: url(./assets/navy-o.svg);
 }
 
 .buttons div {
@@ -119,9 +134,7 @@ body {
   background-color: var(--skyLight);
   transition: all 0.1s ease-out;
 }
-#home {
-  display: none;
-}
+
 /* styles of home section */
 /* styles of board section */
 .board-header {
@@ -181,12 +194,6 @@ body {
   background-position: top 2.4rem right 2.8rem;
   background-repeat: no-repeat;
   background-size: 4rem 4rem;
-}
-#xo-1 {
-  background-image: url(./assets/icon-x.svg);
-}
-#xo-2 {
-  background-image: url(./assets/icon-o.svg);
 }
 .score {
   width: 32.8rem;
@@ -333,6 +340,12 @@ body {
   width: 15.1rem;
   height: 5.2rem;
 }
+#restart {
+  display: none;
+}
+/* styles of restart section */
+
+
 
 
 

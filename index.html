@@ -19,19 +19,17 @@
       <div class="home-panel">
         <h2 class="header-title">PICK PLAYER 1'S MARK</h2>
         <div class="buttons">
-          <div id="button-x btn">
-            <img src="./assets/silver-x.svg" alt="x icon">
+          <div id="button-x" class="buttonX">
           </div>
-          <div id="button-o btn">
-            <img src="./assets/navy-o.svg" alt="o icon">
+          <div id="button-o" class="buttonO activeO">
           </div>
         </div>
         <h2 class="notice">REMEMBER : X GOES FIRST</h2>
       </div>
-      <button class="game-vs-spu vs-button">
+      <button class="game-vs-spu vs-button" onclick="startGame('spu')">
         NEW GAME (VS CPU)
       </button>
-      <button class="game-vs-player vs-button">
+      <button class="game-vs-player vs-button" onclick="startGame('player')">
         NEW GAME (VS PLAYER)
       </button>
     </section>
@@ -45,15 +43,15 @@
         <div class="reset-button"></div>
       </div>
       <div class="main-board">
-        <div id="xo-1"></div>
-        <div id="xo-2"></div>
-        <div id="xo-3"></div>
-        <div id="xo-4"></div>
-        <div id="xo-5"></div>
-        <div id="xo-6"></div>
-        <div id="xo-7"></div>
-        <div id="xo-8"></div>
-        <div id="xo-9"></div>
+        <div id="xo" class="1 turn"></div>
+        <div id="xo" class="2 turn"></div>
+        <div id="xo" class="3 turn"></div>
+        <div id="xo" class="4 turn"></div>
+        <div id="xo" class="5 turn"></div>
+        <div id="xo" class="6 turn"></div>
+        <div id="xo" class="7 turn"></div>
+        <div id="xo" class="8 turn"></div>
+        <div id="xo" class="9 turn"></div>
       </div>
       <div class="score">
         <div class="x-score">
