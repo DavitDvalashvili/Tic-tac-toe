@@ -185,15 +185,28 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
 }
+.addX {
+  background-image: url(./assets/icon-x.svg);
+}
+.addO {
+  background-image: url(./assets/icon-o.svg);
+}
+.hoverX div:not(.addX):not(.addO):hover {
+  background-image: url(/assets/icon-x-outline.svg);
+}
+.hoverO div:not(.addX):not(.addO):hover {
+  background-image: url(/assets/icon-o-outline.svg);
+}
 .main-board div {
   width: 9.6rem;
   height: 9.6rem;
-  background: #1F3641;
+  background-color: #1F3641;
   box-shadow: inset 0rem -0.8rem 0rem #10212A;
   border-radius: 1rem;
   background-position: top 2.4rem right 2.8rem;
   background-repeat: no-repeat;
   background-size: 4rem 4rem;
+  cursor: pointer;
 }
 .score {
   width: 32.8rem;
@@ -234,9 +247,10 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
 }
-#board {
+
+/* #board {
   display: none;
-}
+} */
 /* styles of board section */
 /* styles of result section */
 .result-board, .restart-board {
