@@ -1,101 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <script src="./script.js" defer></script>
-    <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <section id="home">
-      <div class="home-header">
-        <img src="./assets/icon-x.svg" alt="x-icon" />
-        <img src="./assets/icon-o.svg" alt="o-icon" />
-      </div>
-      <div class="home-panel">
-        <h2 class="header-title">PICK PLAYER 1'S MARK</h2>
-        <div class="buttons">
-          <div id="button-x" class="buttonX">
-          </div>
-          <div id="button-o" class="buttonO activeO">
-          </div>
-        </div>
-        <h2 class="notice">REMEMBER : X GOES FIRST</h2>
-      </div>
-      <button class="game-vs-spu vs-button" onclick="startGame('spu')">
-        NEW GAME (VS CPU)
-      </button>
-      <button class="game-vs-player vs-button" onclick="startGame('player')">
-        NEW GAME (VS PLAYER)
-      </button>
-    </section>
-    <section id="board">
-      <div class="board-header">
-        <img src="./assets/logo.svg" alt="logo">
-        <div class="turn">
-          <img src="./assets/silver-x.svg" alt="icon x-icon">
-          <span id="turn-text">turn</span>
-        </div>
-        <div class="reset-button"></div>
-      </div>
-      <div class="main-board hoverX">
-        <div class="xo" id="1 "></div>
-        <div class="xo" id="2 "></div>
-        <div class="xo" id="3 "></div>
-        <div class="xo" id="4 "></div>
-        <div class="xo" id="5 "></div>
-        <div class="xo" id="6 "></div>
-        <div class="xo" id="7 "></div>
-        <div class="xo" id="8 "></div>
-        <div class="xo" id="9 "></div>
-      </div>
-      <div class="score">
-        <div class="x-score">
-          <span id="x-score-text">X (p2)</span>
-          <span id="x-score-num">0</span>
-        </div>
-        <div class="ties">
-          <span id="ties-text">ties</span>
-          <span id="ties-num">0</span>
-        </div>
-        <div class="o-score">
-          <span id="o-score-text">o (p1)</span>
-          <span id="o-score-num">0</span>
-        </div>
-      </div>
-    </section>
-    <section id="result">
-      <div class="result-board">
-        <h3 class="result-text"></h3>
-        <div class="o-takes">
-          <img src="/assets/icon-o.svg" alt="o icon">
-          <h2>TAKES THE ROUND</h2>
-        </div>
-        <div class="x-takes">
-          <img src="./assets/icon-x.svg" alt="x icon">
-          <h2>TAKES THE ROUND</h2>
-        </div>
-        <div class="tied">
-          <h2>Round tied</h2>
-        </div>
-        <div class="quit-or-next">
-          <button id="quit">quit</button>
-          <button id="next">NEXT ROUND</button>
-        </div>
-      </div>
-    </section>
-    <section id="restart">
-      <div class="restart-board">
-        <h3>restart game?</h3>
-        <div class="restart-buttons">
-          <button id="no">NO, CANCEL</button>
-          <button id="yes">YES, RESTART</button>
-        </div>
-      </div>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
