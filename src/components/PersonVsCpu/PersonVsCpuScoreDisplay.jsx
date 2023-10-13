@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 
 function PvCScoreDisplay(props) {
   return (
@@ -28,31 +28,30 @@ export const StyledDisplay = styled.div`
   justify-content: space-between;
   padding-top: 1.5em;
 
-.score {
-  border-radius: 15px;
-  width: 9em;
-  height: 4.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .score {
+    border-radius: 15px;
+    width: 9em;
+    height: 4.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.score-number {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
+  .score-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 
-.x-score {
-  background: #31c3bd;
-}
+  .x-score {
+    background: #31c3bd;
+  }
 
-.tie-score {
-  background: #a8bfc9;
-}
+  .tie-score {
+    background: #a8bfc9;
+  }
 
-.o-score {
-  background: #f2b137;
-}
-
-`
+  .o-score {
+    background: #f2b137;
+  }
+`;

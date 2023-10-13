@@ -1,10 +1,17 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-import PvCSquare from "./PersonVsCpuSquare";
-import styled from 'styled-components'
+import React from 'react';
+import PvCSquare from './PersonVsCpuSquare';
+import styled from 'styled-components';
 
-
-function PvCBoard({ board, onClick, winningCombination, winner, className, playerOne, playerCpu}) {
+function PvCBoard({
+  board,
+  onClick,
+  winningCombination,
+  winner,
+  className,
+  playerOne,
+  playerCpu,
+}) {
   return (
     <StyledBoard>
       {board.map((square, i) => (
@@ -25,17 +32,14 @@ function PvCBoard({ board, onClick, winningCombination, winner, className, playe
 }
 export default PvCBoard;
 
-
 export const StyledBoard = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
   justify-content: center;
   @media (max-width: 420px) {
-  .board {
-    grid-template-columns: repeat(3, 6.5em);
+    .board {
+      grid-template-columns: repeat(3, 6.5em);
+    }
   }
-}
-
-
-`
+`;

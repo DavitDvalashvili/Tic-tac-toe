@@ -1,9 +1,18 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import PvPSquare from "./PersonVsPersonSquare";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-function PvPBoard({ board, onClick, winningCombination, winner, className, playerOne, playerTwo, xIsNext }) {
+function PvPBoard({
+  board,
+  onClick,
+  winningCombination,
+  winner,
+  className,
+  playerOne,
+  playerTwo,
+  xIsNext,
+}) {
   return (
     <StyledBoard>
       {board.map((square, i) => (
@@ -25,7 +34,6 @@ function PvPBoard({ board, onClick, winningCombination, winner, className, playe
 }
 export default PvPBoard;
 
-
 export const StyledBoard = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -36,4 +44,4 @@ export const StyledBoard = styled.div`
       grid-template-columns: repeat(3, 6.5em);
     }
   }
-`
+`;

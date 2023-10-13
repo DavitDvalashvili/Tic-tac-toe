@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PvPGame from "./components/PersonVsPerson/PersonVsPersonGame";
 import PvCGame from "./components/PersonVsCpu/PersonVsCpuGame";
 import NewGameMenu from "./components/UI/NewGameMenu";
-import "./App.css";
+import styled from "styled-components";
 
 function App() {
   const [showMenu, setShowMenu] = useState(true);
@@ -41,7 +41,7 @@ function App() {
   }
 
   return (
-    <main className="centered-container">
+    <MainContainer>
       {showMenu && (
         <NewGameMenu
           onDisplayMenuHandler={displayMenuHandler}
@@ -71,8 +71,16 @@ function App() {
           playerCpu={playerCpu}
         />
       )}
-    </main>
+    </MainContainer>
   );
 }
 
 export default App;
+
+export const MainContainer = styled.main`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+`;
