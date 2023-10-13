@@ -13,7 +13,6 @@
 ### Prerequisites
 
 - <img src="public/readme/npm.png" width="25" style="top: 8px" /> _npm @8 and up_
-- <img src="public/readme/javascript.png" width="25" style="top: 8px" /> \_javascript
 - <img src="public/readme/vite.jpg" width="25" style="top: 8px" /> \_vite @4.0.0
 
 #
@@ -67,11 +66,8 @@ npm run dev
 - React Javascript library;
 - Styled Components for styling;
 - Vite;
--
 
 ```
-
-#
 
 ### Deployment
 
@@ -85,11 +81,14 @@ npm run build
 
 after this you can use this file to deploy project on server.
 
-#
+```
 
 ### Author
 
 - Github profile - [Add your name here](https://github.com/DavitDvalashvili)
 - Linkedin profile - [Add your name here](https://www.linkedin.com/in/davit-dvalashvili-0421b6253)
 - Email - [@your_username](davitdvalashvili1996@gmail.com)
+
+```
+
 ```
