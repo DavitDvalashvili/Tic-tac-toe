@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
-import { calculateWinner } from "../../helper";
+import React, { useState, useEffect } from 'react';
+import { calculateWinner } from '../../helper';
 /* assets */
-import grayXIcon from "../assets/icon-x-gray.svg";
-import grayOIcon from "../assets//icon-o-gray.svg";
-import logo from "../assets/logo.svg";
-import resetBtn from "../assets/icon-restart.svg";
+import grayXIcon from '../assets/icon-x-gray.svg';
+import grayOIcon from '../assets//icon-o-gray.svg';
+import logo from '../assets/logo.svg';
+import resetBtn from '../assets/icon-restart.svg';
 /* components */
-import PvCBoard from "./PersonVsCpuBoard";
-import PvCScoreDisplay from "./PersonVsCpuScoreDisplay";
-import PvCWinnerModal from "./PersonVsCpuWinnerModal";
-import RestartModal from "../UI/RestartModal";
-import styled from "styled-components";
+import PvCBoard from './PersonVsCpuBoard';
+import PvCScoreDisplay from './PersonVsCpuScoreDisplay';
+import PvCWinnerModal from './PersonVsCpuWinnerModal';
+import RestartModal from '../UI/RestartModal';
+import styled from 'styled-components';
 
 function PvCGame(props) {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -25,7 +25,7 @@ function PvCGame(props) {
   function computerPlay(localBoard, icon) {
     const availableIndices = [];
     localBoard.forEach((space, index) => {
-      if (space !== "X" && space !== "O") {
+      if (space !== 'X' && space !== 'O') {
         return availableIndices.push(index);
       }
     });
@@ -43,19 +43,19 @@ function PvCGame(props) {
     if (winner || boardCopy[i]) return;
     // Insert an O or an X into the square depending on the player
 
-    let value = "O";
-    let cpuValue = "O";
+    let value = 'O';
+    let cpuValue = 'O';
 
-    if (props.playerOne === "X") {
-      value = "X";
-    } else if (props.playerCpu === "X") {
-      cpuValue = "X";
+    if (props.playerOne === 'X') {
+      value = 'X';
+    } else if (props.playerCpu === 'X') {
+      cpuValue = 'X';
     }
 
-    if (props.playerOne === "O") {
-      value = "O";
-    } else if (props.playerCpu === "O") {
-      cpuValue = "O";
+    if (props.playerOne === 'O') {
+      value = 'O';
+    } else if (props.playerCpu === 'O') {
+      cpuValue = 'O';
     }
 
     boardCopy[i] = value;
@@ -74,9 +74,9 @@ function PvCGame(props) {
 
   useEffect(() => {
     if (winner) {
-      if (winner === "X") {
+      if (winner === 'X') {
         setXScore((score) => score + 1);
-      } else if (winner === "O") {
+      } else if (winner === 'O') {
         setOScore((score) => score + 1);
       }
     } else if (winner === null && !board.includes(null)) {
@@ -101,7 +101,7 @@ function PvCGame(props) {
                   playerOne={props.playerOne}
                   playerCpu={props.playerCpu}
                 />
-              ) : props.playerOne === "X" ? (
+              ) : props.playerOne === 'X' ? (
                 <img src={grayXIcon} alt="gray X icon" className="xo-icons" />
               ) : (
                 <img src={grayOIcon} alt="gray O icon" className="xo-icons" />
